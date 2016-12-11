@@ -22,4 +22,8 @@ Route::group(['prefix' => 'api/v1'], function () {
                     'timestamp' => time()
         ]);
     });
-});
+
+    Route::post('user/add', 'UserController@add');
+    
+    
+    });
