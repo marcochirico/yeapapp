@@ -31,7 +31,9 @@ class UserController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function add(Request $request) {
-        return response()->json($request);
+        return response()->json([
+                    'user_created' => time()
+        ]);
     }
 
     /**
