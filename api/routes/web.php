@@ -15,15 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'api/v1'], function () {
 
-    Route::get('sync', function () {
-        return response()->json([
-                    'timestamp' => time()
-        ]);
-    });
-    
-    Route::any('user/add', 'UserController@add');
-    
-    
-    });
